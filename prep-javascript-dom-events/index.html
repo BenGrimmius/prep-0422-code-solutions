@@ -11,7 +11,7 @@
   <button class="hello-world-btn">Hello World!</button>
   <script>
     // Your code here
-    addEventListener('DOMContentloaded', myFunction);
+    document.addEventListener('DOMContentLoaded', myFunction);
     function myFunction() {
       console.log('Content Loaded');
     }
@@ -21,9 +21,9 @@
       console.log('Mouse is Moving');
     }
 
-    var $helloWorld = document.querySelector('button.hello-world-btn');
+    var $helloWorld = document.querySelector('.hello-world-btn');
 
-    addEventListener('click', myFunction3);
+    $helloWorld.addEventListener('click', myFunction3);
     function myFunction3() {
       'click';
       console.log('Hello World');
